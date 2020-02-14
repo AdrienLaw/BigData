@@ -134,3 +134,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+src/main/java/com/adrien/mr/blog/
+src/main/java/com/adrien/mr/compress/
+src/main/java/com/adrien/mr/index/
+src/main/java/com/adrien/mr/loghard/
+src/main/java/com/adrien/mr/topn/
