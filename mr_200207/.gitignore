@@ -38,7 +38,7 @@ hs_err_pid*
 # Generated files
 .idea/**/contentModel.xml
 
-# Sensitive or high-churn files
+#  Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.local.xml
@@ -46,7 +46,7 @@ hs_err_pid*
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
-
+.idea/*
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries
@@ -134,8 +134,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-src/main/java/com/adrien/mr/blog/
-src/main/java/com/adrien/mr/compress/
-src/main/java/com/adrien/mr/index/
-src/main/java/com/adrien/mr/loghard/
-src/main/java/com/adrien/mr/topn/
+#src/main/java/com/adrien/mr/blog/
+#src/main/java/com/adrien/mr/compress/
+#src/main/java/com/adrien/mr/index/
+#src/main/java/com/adrien/mr/loghard/
+#src/main/java/com/adrien/mr/topn/
