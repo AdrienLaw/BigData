@@ -38,5 +38,6 @@ hs_err_pid*
 
 .idea/
 kafka000.iml
-pom.xml
 
+
+src/main/resources/
