@@ -21,7 +21,7 @@ public class WebLogSpout implements IRichSpout {
 
 
     @Override
-    public void open(Map map, TopologyContext topologyContext, SpoutOutputCollector spoutOutputCollector) {
+    public void open(Map map, TopologyContext topologyContext, SpoutOutputCollector collector) {
         this.collector = collector;
         try {
             bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream("/Users/luohaotian/Downloads/Jennifer/BigData/website.log"),"UTF-8"));

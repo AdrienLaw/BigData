@@ -31,7 +31,7 @@ public class WebLogBolt implements IRichBolt {
             // 2 统计发射行数
 
             num ++;
-            System.out.println(Thread.currentThread().getId() + "lines: " + num + "  session_id: " + session_ID + "lineNum" + line);
+            System.err.println(Thread.currentThread().getId() + "lines: " + num + "  session_id: " + session_ID + "lineNum" + line);
 
 
 
