@@ -57,7 +57,5 @@ public class GenerateData {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
