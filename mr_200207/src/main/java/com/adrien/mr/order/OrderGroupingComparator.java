@@ -15,7 +15,7 @@ public class OrderGroupingComparator extends WritableComparator {
         //只要ID相同，认为相同的key
         int result;
         OrderBean aOrderBean = (OrderBean) a;
-        OrderBean bOrderBean = (OrderBean) a;
+        OrderBean bOrderBean = (OrderBean) b;
         if (aOrderBean.getOrderId() > bOrderBean.getOrderId()) {
             result = 1;
         } else if (aOrderBean.getOrderId() < bOrderBean.getOrderId()) {

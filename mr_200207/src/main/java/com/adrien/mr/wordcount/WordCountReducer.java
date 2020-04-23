@@ -25,7 +25,6 @@ public class WordCountReducer extends Reducer<Text, IntWritable,Text,IntWritable
         for (IntWritable value : values) {
             sum += value.get();
         }
-
         intWritable.set(sum);
 
         //2. 写出

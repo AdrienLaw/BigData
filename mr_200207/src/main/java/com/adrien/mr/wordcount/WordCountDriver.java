@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class WordCountDriver {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-        args = new String[]{"/Users/luohaotian/Downloads/Jennifer/HelloApp/input/combiner","/Users/luohaotian/Downloads/Jennifer/HelloApp/output/combiner210"};
+        args = new String[]{"/Users/luohaotian/Downloads/Jennifer/HelloApp/input/combiner","/Users/luohaotian/Downloads/Jennifer/HelloApp/output/combiner2122"};
 
         Configuration conf = new Configuration();
         //1. 获取Job对象
@@ -37,8 +37,8 @@ public class WordCountDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
-        //job.setCombinerClass(WordcountCombiner.class);
-        job.setCombinerClass(WordCountReducer.class);
+        job.setCombinerClass(WordcountCombiner.class);
+        //job.setCombinerClass(WordCountReducer.class);
         /**
          * 6. 设置输入路径和输出路径
          *

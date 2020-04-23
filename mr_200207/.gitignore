@@ -48,7 +48,7 @@ hs_err_pid*
 .idea/**/dbnavigator.xml
 .idea/*
 .idea
-target
+target/
 # Gradle
 .idea/**/gradle.xml
 .idea/**/libraries

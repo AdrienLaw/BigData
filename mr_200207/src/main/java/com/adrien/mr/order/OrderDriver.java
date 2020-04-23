@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class OrderDriver {
     public static void main(String[] args) throws InterruptedException, IOException, ClassNotFoundException {
-        args = new String[]{"/Users/luohaotian/Downloads/Jennifer/HelloApp/input/groupComparator","/Users/luohaotian/Downloads/Jennifer/HelloApp/output/groupComparator2"};
+        args = new String[]{"/Users/luohaotian/Downloads/Jennifer/HelloApp/input/groupComparator","/Users/luohaotian/Downloads/Jennifer/HelloApp/output/groupComparator6"};
 
         // 1 获取配置信息
         Configuration conf = new Configuration();
