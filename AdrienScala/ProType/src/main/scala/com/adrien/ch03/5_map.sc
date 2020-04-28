@@ -17,6 +17,9 @@ val bobsScore = scores("Bob")
 
 // contains检测
 val fredsScore = if (scores.contains("Fred")) scores("Fred") else 0
+val fredsScore = if (scores.contains("Bob")) scores("Bob") else 0
+
+
 
 // 可以用getOrElse替换检测
 scores.getOrElse("Bob", 0)
@@ -39,6 +42,8 @@ scores1 -= "Alice"
 
 // 不可变映射不能修改，但能够产生新映射
 val newScores = scores + ("Bob" -> 10, "Fred" -> 7) // New map with update
+
+
 
 // 遍历
 for ((k, v) <- scores) println(k + " is mapped to " + v)

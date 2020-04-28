@@ -100,3 +100,19 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+.idea/.gitignore
+.idea/codeStyles/
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scala_compiler.xml
+.idea/vcs.xml
+AdrienScala.iml
+HelloWorld/HelloWorld.iml
+Practice/
+ProType/src/main/scala/com/adrien/HelloWorld.scala
+ProType/src/test/
+pom.xml
+src/

@@ -1,3 +1,4 @@
+/*
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < repl-session.scala to run them all at once.
 
@@ -25,19 +26,19 @@ b
 
 // 在第三个位置插入6
 b.insert(2, 6)
-b
+
 
 // 在第三个位置插入 7、8、9
-b.insert(2, 7, 8, 9)
+//b.insert(2, 7, 8, 9)
 b
 
 // 删除第三个元素
-b.remove(2)
-b
+//b.remove(2)
+//b
 
 // 删除从第三个位置开始的3个元素
-b.remove(2, 3)
-b
+//b.remove(2, 3)
+//b
 
 // 变长数组与不变数组之间的转换
 val a1 = b.toArray
@@ -58,11 +59,39 @@ for (i <- 0 until a.length)
 
 // Range倒转
 (0 until a.length).reverse
+*/
 
-// a 遍历
+
+/*// a 遍历
 for (elem <- a)
-  println(elem)
+  println(elem)*/
 
-// a 索引
+/*// a 索引
 for (i <- a.indices)
-  println(i + ": " + a(i))
+  println(i + ": " + a(i))*/
+
+
+def testMatrixA () = {
+  val matrix = Array.ofDim[Int](3, 4)
+  printMatrix(matrix)
+}
+
+
+def printMatrix(matrix: Array[Array[Int]]): Unit ={
+  // 创建矩阵
+  for (i <- 0 to 2) {
+    for ( j <- 0 to 3) {
+      matrix(i)(j) = j;
+    }
+  }
+  // 打印二维阵列
+  for (i <- 0 to 2) {
+    for ( j <- 0 to 3) {
+      print(" " + matrix(i)(j));
+    }
+    println();
+  }
+}
+
+testMatrixA()
+

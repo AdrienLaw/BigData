@@ -8,7 +8,7 @@ val t = (1, 3.14, "Fred")
 
 val second = t._2
 
-val first = t _1
+val first = t._2
 
 //变量赋值
 val (first1, second1, third) = t
@@ -23,4 +23,5 @@ val pairs = symbols.zip(counts)
 
 for ((s, n) <- pairs) print(s * n)
 
-symbols.zip(counts).toMap
+val result = symbols.zip(counts).toMap
+result
