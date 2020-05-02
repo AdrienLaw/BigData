@@ -111,8 +111,7 @@ fabric.properties
 .idea/vcs.xml
 AdrienScala.iml
 HelloWorld/HelloWorld.iml
-Practice/
+
 ProType/src/main/scala/com/adrien/HelloWorld.scala
 ProType/src/test/
-pom.xml
-src/
+
