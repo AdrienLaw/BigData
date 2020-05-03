@@ -10,6 +10,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>ProType</module>
+    <module>AkkaSystem</module>
   </modules>
 
   <name>AdrienScala</name>
