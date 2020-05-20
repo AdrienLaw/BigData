@@ -1,4 +1,5 @@
-package com.atguigu.streaming
+package com.adrien.spark
+
 import java.util.Properties
 import org.apache.commons.pool2.impl.DefaultPooledObject
 import org.apache.commons.pool2.{BasePooledObjectFactory, PooledObject}

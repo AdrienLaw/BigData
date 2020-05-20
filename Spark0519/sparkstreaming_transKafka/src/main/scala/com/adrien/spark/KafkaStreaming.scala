@@ -1,4 +1,4 @@
-package com.atguigu.streaming
+package com.adrien.spark
 
 import org.apache.commons.pool2.impl.{GenericObjectPool, GenericObjectPoolConfig}
 import org.apache.kafka.clients.consumer.ConsumerRecord
@@ -40,7 +40,7 @@ object KafkaStreaming{
     val ssc = new StreamingContext(conf, Seconds(1))
 
     //创建topic
-    val brobrokers = "172.16.148.150:9092,172.16.148.151:9092,172.16.148.152:9092"
+    val brobrokers = "172.16.120.149:9092,172.16.120.150:9092,172.16.120.151:9092"
     val sourcetopic="source";
     val targettopic="target";
 
@@ -69,7 +69,7 @@ object KafkaStreaming{
 
 
     //每一个stream都是一个ConsumerRecord
-    stream.map(s =>("id:" + s.key(),">>>>:"+s.value())).foreachRDD(rdd => {
+    stream.map(s =>("id:" + s.key(),"他告诉你这些："+s.value())).foreachRDD(rdd => {
       rdd.foreachPartition(partitionOfRecords => {
         // Get a producer from the shared pool
         val pool = createKafkaProducerPool(brobrokers, targettopic)
